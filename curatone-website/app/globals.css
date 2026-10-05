@@ -1,0 +1,13 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-cream text-navy-deep font-sans antialiased; }
+@layer components {
+  .btn { @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold; }
+  .btn-primary { @apply btn bg-navy text-white shadow-lg shadow-navy/25 hover:bg-navy-deep; }
+  .btn-gold { @apply btn bg-gold text-navy-deep shadow-lg shadow-gold/40 hover:brightness-105; }
+  .btn-ghost { @apply btn border-2 border-navy/20 text-navy hover:bg-white; }
+  .card { @apply rounded-3xl bg-white p-6 shadow-[0_10px_40px_-15px_rgba(11,42,107,.25)]; }
+  .section { @apply mx-auto max-w-6xl px-5 py-16 md:py-24; }
+  .eyebrow { @apply text-sm font-bold uppercase tracking-widest text-coral; }
+  .h2 { @apply mt-2 font-display text-3xl font-bold md:text-5xl; }
+}
